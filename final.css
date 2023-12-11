@@ -8,7 +8,11 @@ body {
 
 }
 
-
+@media (min-width: 630px) {
+    .card {
+        width: 190px
+    }
+}
 
 .main {
     width: 100vw;
@@ -39,11 +43,6 @@ header {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.premium-div {
-    padding: 5px 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 ul {
     display: flex;
     text-decoration: none;
@@ -56,7 +55,9 @@ ul {
 .premium-div {
     display: flex;
     align-content: center;
-    gap: 7px;
+    gap: 3px;
+    padding: 5px 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .premium {
@@ -86,8 +87,8 @@ ul {
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 10px;
+    gap: 10px;
+    padding: 50px;
 }
 
 

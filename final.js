@@ -6,13 +6,14 @@ const find = document.getElementById("find")
 const getCarMarketValue = async (event) => {
     event.preventDefault()
     const result = document.getElementById("result")
+    const mileage_number = +mileage.value.split(",").join("")
     console.log(mileage.value, vin.value)
     if (!mileage.value && !vin.value) {
         result.innerText = "Please fill out all fields"
         return
     }
 
-    const url = `https://car-utils.p.rapidapi.com/marketvalue?vin=${vin.value}&mileage=${mileage.value}`;
+    const url = `https://car-utils.p.rapidapi.com/marketvalue?vin=${vin.value}&mileage=${mileage_number}`;
     const options = {
         method: 'GET',
         headers: {
@@ -24,12 +25,11 @@ const getCarMarketValue = async (event) => {
     try {
         const response = await fetch(url, options);
         const data = await response.json()
-        result.innerText = "The Value of the Car is $" + data.prices.average;
-        result.style.fontSize = "20px";
+        result.innerHTML = `<span style='width: 100%'>The Value of the Car is <b>$${data.prices.average}<b><span>`;
+        result.style.fontSize = "bold";
     } catch (error) {
         console.error(error);
     }
 }
-
 
 find.addEventListener("click", getCarMarketValue)
