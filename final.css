@@ -5,14 +5,14 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    
+
 }
 
 @media only screen and (max-width: 440px) {
-    .body {
-       margin: auto;
+    body {
+       /* margin: auto;
        padding: 0; 
-       visibility: visible;
+       visibility: visible; */
     }
     img {
         max-width: 100%;
@@ -100,13 +100,13 @@ ul {
 }
 .card {
     width: 500px;
-    height: 300px;
+    height: 350px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.699);
-    background-image: url(audilogo.svg.png);
+    background-image: url(7487877.png);
     background-repeat: no-repeat;
     background-size: 100px;
-    background-position: top;
+    background-position: top right;
     margin-top: 70px;
     justify-content: center;
     align-items: center;
@@ -114,6 +114,11 @@ ul {
     flex-direction: column;
     gap: 20px;
 }
+
+h3 {
+    text-align: top left;
+}
+
 form {
     width: 80%;
     height: 100%;

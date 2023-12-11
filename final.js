@@ -7,11 +7,11 @@ const getCarMarketValue = async (event) => {
     event.preventDefault()
     const result = document.getElementById("result")
     console.log(mileage.value, vin.value)
-    if (!mileage.value && !vin.value){ 
-       result.innerText = "please fill out this form"
+    if (!mileage.value && !vin.value) {
+        result.innerText = "Please fill out all fields"
         return
     }
-    
+
     const url = `https://car-utils.p.rapidapi.com/marketvalue?vin=${vin.value}&mileage=${mileage.value}`;
     const options = {
         method: 'GET',
@@ -20,7 +20,7 @@ const getCarMarketValue = async (event) => {
             'X-RapidAPI-Host': 'car-utils.p.rapidapi.com'
         }
     };
-    
+
     try {
         const response = await fetch(url, options);
         const data = await response.json()
