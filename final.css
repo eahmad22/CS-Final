@@ -4,6 +4,8 @@ body {
     background-image: url("carfinal.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
+    
 }
 
 @media only screen and (max-width: 440px) {
@@ -25,7 +27,7 @@ body {
   }
 
 .main {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     justify-content: center;
     align-items: center;
@@ -98,14 +100,14 @@ ul {
 }
 .card {
     width: 500px;
-    height: 500px;
+    height: 300px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.699);
     background-image: url(audilogo.svg.png);
     background-repeat: no-repeat;
     background-size: 100px;
     background-position: top;
-    margin-top: 125px;
+    margin-top: 70px;
     justify-content: center;
     align-items: center;
     display: flex;

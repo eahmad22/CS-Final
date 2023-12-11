@@ -3,7 +3,8 @@ const mileage = document.getElementById("mileage-number")
 const find = document.getElementById("find")
 
 
-const getCarMarketValue = async () => {
+const getCarMarketValue = async (event) => {
+    event.preventDefault()
     const result = document.getElementById("result")
     console.log(mileage.value, vin.value)
     if (!mileage.value && !vin.value){ 
