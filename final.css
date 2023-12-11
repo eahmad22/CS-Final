@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("carfinal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 440px) {
+    .body {
+       margin: auto;
+       padding: 0; 
+    }
+  }
+
+.main {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Calibri';
+    backdrop-filter: brightness(76%);
+}
+
+
+header {
+    top: 0;
+    width: 100%;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: black;
+    color: white;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 700;
+    padding: 5px 15px;
+}
+
+ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 16px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-btn {
+    padding: 5px 15px;
+    border-radius: 10px;
+    border-color: white;
+    border-width: 3px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: bold;
+    background-color: black;
+}
+
+.premium-div {
+    display: flex;
+    align-content: center;
+    gap: 7px;
+}
+
+.premium {
+    font-weight: 500;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.699);
+    background-image: url(audilogo.svg.png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: top;
+    margin-top: 125px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+form {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.querey {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+input {
+    width: 100%;
+    padding: 5px 5px;
+    border-radius: 24px;
+    border-color: black;
+}
