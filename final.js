@@ -24,7 +24,8 @@ const getCarMarketValue = async (event) => {
     try {
         const response = await fetch(url, options);
         const data = await response.json()
-        result.innerText = "The Value of the Car is $" + data.prices.average
+        result.innerText = "The Value of the Car is $" + data.prices.average;
+        result.style.fontSize = "20px";
     } catch (error) {
         console.error(error);
     }
