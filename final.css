@@ -10,6 +10,7 @@ body {
     .body {
        margin: auto;
        padding: 0; 
+       visibility: visible;
     }
   }
 
